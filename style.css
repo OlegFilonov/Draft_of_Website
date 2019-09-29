@@ -1,0 +1,153 @@
+/*--------------------------------*/
+/* Отменяем часть встроенного форматирования от браузера */
+/*--------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none; /*убираем маркеры списка*/
+    margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+    padding-left: 0; /*убираем левый отступ, равный 40px*/
+}
+a {text-decoration: none; /*убираем подчеркивание текста ссылок*/}
+
+/*--------------------------------*/
+/* Задаем базовые значения документа: цвет, шрифты, размеры шрифтов */
+/*--------------------------------*/
+
+html,
+body {
+    background-color: #fff;
+    color: #F5F5F5;
+    font-family: "Lato", 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    /*зачем это здесь?*/
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://berutop.ru/wp-content/uploads/2019/06/reyting-top-5-luchshih-korpusov-pk.jpg);
+    /*мастшабируем изображение с сохранением пропорций*/
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    /*зачем это здесь?*/
+    box-sizing: border-box;
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: 33% 66%;
+    grid-template-rows: auto auto;
+}
+
+.nav-bar img {
+    margin-top: 60px;
+}
+
+.section-form {
+    padding: 60px 0;
+}
+
+/*Grid Layout
+
+Как это сделать адекватней?*/
+
+nav {
+    box-sizing: border-box;
+}
+
+.main-nav {
+ /*   display: grid;
+    grid-template-columns: 10% 10% 10% 10% 20% 20% 20%;
+    grid-template-rows: auto auto auto auto auto auto auto;*/
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav {
+     display: flex;
+ }
+
+.main-nav a {
+    display: block;
+    padding: 1em;
+    color: #F5F5F5;
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-1%, -50%);
+}
+
+.text-box h1 {
+     margin-bottom: 20px;
+ }
+
+.text-box p {
+    margin-bottom: 40px;
+}
+
+.text-box a {
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    background-color: #29B6F6;
+    border: 1px solid #29B6F6;
+    color: #fff;
+}
+
+#about {
+    padding: 60px;
+    color: #030a27;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-us {
+    text-align: center;
+}
+
+/*Картинка*/
+
+.pictures-block {
+    list-style: none;
+    width: 100%;
+}
+
+.pictures-block li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.pictures-block img {
+ /*   opacity: 0.7;*/
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}

@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Draft of Website</title>
+   <!-- <link rel="stylesheet" type="text/css" href="style.css">-->
+<!--
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+-->
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style2.css">
 </head>
 <body>
     <header>
         <nav>
-            <div>
+            <div class="nav-bar">
                 <img src="https://static.tildacdn.com/tild3437-6432-4331-b663-303039376435/_1_1.png" alt="Service Sound">
-                <ul>
+                <ul class="main-nav">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Work</a></li>
@@ -20,15 +27,122 @@
                 </ul>
             </div>
         </nav>
-        <div>
+        <div class="text-box">
             <h1>We Design and Develop</h1>
             <p>We are a new design studio based in USA.
             We have over 20 years of combined experience,
             and know a thing or two about designing websites
             and mobile apps.</p>
-            <a href="#">Contact us</a>
+            <a href="#" class="button">Contact us</a>
         </div>
     </header>
 
+    <main>
+        <section id="about">
+            <div class="about">
+                <h2>About Us</h2>
+                <p class="about-us">Divide have don't man wherein air fourth. Own itself make have night won't make.
+                A you under Seed appear which good give. Own give air without fowl moveth dry first
+                heaven fruit, dominion she'd won't very all.</p>
+                <img src="resources/img/signature.png" alt="signature">
+            </div>
+        </section>
+
+        <section id="pics" class="section-pictures">
+            <ul class="pictures-block">
+                <li>
+                    <figure>
+                        <img src="#" alt="Pic_1">
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="#" alt="Pic_2">
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="#" alt="Pic_3">
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="#" alt="Pic_4">
+                    </figure>
+                </li>
+            </ul>
+
+            <ul class="pictures-block">
+                <li>
+                    <figure>
+                        <img src="#" alt="Pic_5">
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="#" alt="Pic_6">
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="#" alt="Pic_7">
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="#" alt="Pic_8">
+                    </figure>
+                </li>
+            </ul>
+        </section>
+
+        <section id="skills" class="section-skills">
+            <div>
+                <i class="icon ion-md-speedometer"></i>
+                <h3>UI/UX DESIGN</h3>
+                <p>Be set fourth land god darkness make it wherein own</p>
+            </div>
+            <div>
+                <i class="icon ion-md-shirt"></i>
+                <h3>WEB DEVELOPMENT</h3>
+                <p>A she'd them bring void moving third she'd kind fill</p>
+            </div>
+            <div>
+                <i class="icon ion-md-phone-portrait"></i>
+                <h3>APP / MOBILE</h3>
+                <p>Dominion man second spirit he, earth they're creeping</p>
+            </div>
+            <div>
+                <i class="icon ion-md-airplane"></i>
+                <h3>SEO / MARKETINGN</h3>
+                <p>Give won't after land fill creeping meat you, may</p>
+            </div>
+                    <div>
+                <i class="icon ion-md-star"></i>
+                <h3>PHOTOGRAPHY</h3>
+                <p>Creepeth one seas cattle grass give moving saw give</p>
+            </div>
+            <div>
+                <i class="icon ion-md-color-wand"></i>
+                <h3>GRAPHIC DESIGN</h3>
+                <p>Open, great whales air rule for, fourth life whales</p>
+            </div>
+        </section>
+
+        <section class="section-form">
+            <div>
+                <h2>Need a Project?</h2>
+            </div>
+            <div>
+                <form method="post" action="#">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="title" placeholder="Your Title" required>
+                    <textarea name="message" placeholder="Your Comment"></textarea>
+                    <input type="submit" value="Send message">
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
