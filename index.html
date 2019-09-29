@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title>Draft of Website</title>
    <!-- <link rel="stylesheet" type="text/css" href="style.css">-->
-<!--
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
--->
-    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style2.css">
+    <!--
+    Почему не работают иконки-->
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
 </head>
 <body>
     <header>
@@ -50,46 +50,47 @@
 
         <section id="pics" class="section-pictures">
             <ul class="pictures-block">
-                <li>
-                    <figure>
+                <li class="pic-a">
+                    <figure class="graybox">
                         <img src="#" alt="Pic_1">
                     </figure>
                 </li>
                 <li>
-                    <figure>
+                    <figure class="lightgraybox">
                         <img src="#" alt="Pic_2">
                     </figure>
                 </li>
                 <li>
-                    <figure>
+                    <figure class="graybox">
                         <img src="#" alt="Pic_3">
                     </figure>
                 </li>
-                <li>
-                    <figure>
+                <li class="pic-z">
+                    <figure class="lightgraybox">
                         <img src="#" alt="Pic_4">
                     </figure>
                 </li>
             </ul>
 
             <ul class="pictures-block">
-                <li>
-                    <figure>
+                <li class="pic-a">
+                    <figure class="lightgraybox">
                         <img src="#" alt="Pic_5">
                     </figure>
                 </li>
                 <li>
-                    <figure>
+                    <figure class="blackbox">
                         <img src="#" alt="Pic_6">
+                        <i class="icon ion-md-eye"></i>
                     </figure>
                 </li>
                 <li>
-                    <figure>
+                    <figure class="lightgraybox">
                         <img src="#" alt="Pic_7">
                     </figure>
                 </li>
-                <li>
-                    <figure>
+                <li class="pic-z">
+                    <figure class="graybox">
                         <img src="#" alt="Pic_8">
                     </figure>
                 </li>
@@ -129,17 +130,25 @@
             </div>
         </section>
 
-        <section class="section-form">
+        <section id="form" class="section-form">
             <div>
                 <h2>Need a Project?</h2>
             </div>
             <div>
                 <form method="post" action="#">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <input type="text" name="title" placeholder="Your Title" required>
-                    <textarea name="message" placeholder="Your Comment"></textarea>
-                    <input type="submit" value="Send message">
+                    <div>
+                        <input class="input" type="text" name="name" placeholder="Your Name" required>
+                        <input class="input" type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div>
+                        <input class="input" type="text" name="title" placeholder="Your Title" required>
+                    </div>
+                    <div>
+                        <textarea name="message" placeholder="Your Comment"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Send message">
+                    </div>
                 </form>
             </div>
         </section>
