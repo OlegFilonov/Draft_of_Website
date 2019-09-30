@@ -1,3 +1,5 @@
+/*Медиазапросы для адаптивности, когда "резина" уже не работает*/
+
 /* Small phones to small tablets: from 480px to 767px */
 @media only screen and (max-width: 767px) {
 
